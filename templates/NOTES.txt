@@ -1,0 +1,4 @@
+minikube tunnel
+curl localhost:80
+----------------------------
+kubectl port-forward service/{{.Values.appName}} 8888:80 --namespace {{.Values.namespace}}
